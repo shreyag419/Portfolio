@@ -535,3 +535,104 @@ footer {
 .card-footer .btn:hover {
   background: #6a11cb;
 }
+html {
+  scroll-behavior: smooth;
+}
+/* Contact Page */
+.contact {
+  padding: 80px 20px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.contact .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact .subtitle {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #00c6ff;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #00c6ff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #6a11cb;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+  color: #00c6ff;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social-links a {
+  color: #00c6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  color: #6a11cb;
+}
