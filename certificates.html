@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+ <header>
+    <nav>
+      <div class="logo">Shreya</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certificates.html" class="active">Certificates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Certificates Section -->
+  <section class="certificates">
+    <h1>Certificates</h1>
+    <div class="certificates-container">
+      
+      <div class="certificate-card" onclick="openCertificate('images/cert1.png')">
+        <img src="images/cert1.png" alt="Web Development Certificate">
+        <h3>Web Development</h3>
+        <p>Certified in Full-Stack Web Development fundamentals.</p>
+      </div>
+
+      <div class="certificate-card" onclick="openCertificate('images/cert2.png')">
+        <img src="images/cert2.png" alt="C++ Certificate">
+        <h3>C++ Programming</h3>
+        <p>Achieved certification in Data Structures & OOP with C++.</p>
+      </div>
+
+      <div class="certificate-card" onclick="openCertificate('images/cert3.png')">
+        <img src="images/cert3.png" alt="AI/ML Certificate">
+        <h3>AI/ML Workshop</h3>
+        <p>Completed hands-on training in Machine Learning applications.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal Popup -->
+  <div id="certificateModal" class="modal">
+    <span class="close" onclick="closeCertificate()">&times;</span>
+    <img class="modal-content" id="certificateImg">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
