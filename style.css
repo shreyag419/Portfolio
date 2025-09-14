@@ -26,6 +26,7 @@ a {
 }
 
 /* -------------------- NAVBAR -------------------- */
+/* Header wrapper */
 header {
   background: rgba(20, 20, 20, 0.9);
   backdrop-filter: blur(10px);
@@ -36,99 +37,94 @@ header {
   box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
-nav {
+/* Navbar container */
+.navbar {
   max-width: 1100px;
   margin: auto;
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #fff;
 }
 
+/* Logo */
 .logo {
   font-size: 1.6rem;
   font-weight: bold;
   color: #4fa3f7;
 }
 
+/* Nav links (desktop) */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-.nav-links a {
+.nav-links li a {
   color: #fff;
   font-weight: 500;
+  text-decoration: none;
   transition: 0.3s;
   padding: 6px 12px;
   border-radius: 6px;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links li a:hover,
+.nav-links li a.active {
   background: #4fa3f7;
   color: #fff;
 }
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #222;
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
 
-.navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.navbar .nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
-.navbar .nav-links li a {
-  color: #fff;
-  text-decoration: none;
-}
-
+/* Hamburger (hidden by default) */
 .hamburger {
   display: none;
   font-size: 2rem;
   cursor: pointer;
-}
-.nav-links.active {
-  display: flex;
+  user-select: none;
 }
 
+/* Change hamburger to "X" when open */
+.hamburger.open::before {
+  content: "✖"; /* Unicode cross */
+}
 
-/* Mobile responsiveness */
+/* Mobile Styles */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
-    top: 60px;
-    right: 0;
+    top: 70px;
+    right: 20px;
     background-color: #222;
     flex-direction: column;
-    width: 200px;
+    width: 220px;
     display: none;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 8px;
+    gap: 15px;
   }
 
   .nav-links.active {
     display: flex;
+    animation: slideDown 0.3s ease;
   }
 
   .hamburger {
     display: block;
+    color: #fff;
+  }
+}
+
+/* Smooth slide down animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

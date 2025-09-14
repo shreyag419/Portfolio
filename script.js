@@ -86,7 +86,16 @@ function closeCertificate() {
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 
+// Toggle menu on hamburger click
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
+  hamburger.classList.toggle('open'); // for animation
 });
 
+// Close menu when clicking a link (for better UX)
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    hamburger.classList.remove('open');
+  });
+});
