@@ -9,12 +9,11 @@
 <body>
 
   <!-- Navbar -->
- <header>
-    <nav>
-      <div class="logo">Shreya</div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="certificates.html" class="active">Certificates</a></li>
@@ -22,27 +21,48 @@
       </ul>
     </nav>
   </header>
+
   <!-- Certificates Section -->
   <section class="certificates">
-    <h1>Certificates</h1>
+    <h1>My Certificates</h1>
+    <p class="subtitle">Achievements & Recognitions</p>
+
     <div class="certificates-container">
       
-      <div class="certificate-card" onclick="openCertificate('images/cert1.png')">
-        <img src="images/cert1.png" alt="Web Development Certificate">
-        <h3>Web Development</h3>
-        <p>Certified in Full-Stack Web Development fundamentals.</p>
+      <div class="certificate-card" onclick="openCertificate('Hackarena.png')">
+        
+        <h3>HackArena</h3>
+        <p>Hackathon participation & innovation recognition.</p>
       </div>
 
-      <div class="certificate-card" onclick="openCertificate('images/cert2.png')">
-        <img src="images/cert2.png" alt="C++ Certificate">
-        <h3>C++ Programming</h3>
-        <p>Achieved certification in Data Structures & OOP with C++.</p>
+      <div class="certificate-card" onclick="openCertificate('airothon.jpg')">
+        
+        <h3>Airothon</h3>
+        <p>AI-focused hackathon showcasing ML solutions.</p>
       </div>
 
-      <div class="certificate-card" onclick="openCertificate('images/cert3.png')">
-        <img src="images/cert3.png" alt="AI/ML Certificate">
-        <h3>AI/ML Workshop</h3>
-        <p>Completed hands-on training in Machine Learning applications.</p>
+      <div class="certificate-card" onclick="openCertificate('c++.jpg')">
+        
+        <h3>C++ Algorithm</h3>
+        <p>Certified in Data Structures & Algorithmic problem-solving.</p>
+      </div>
+
+      <div class="certificate-card" onclick="openCertificate('Coursera.png')">
+        
+        <h3>Frontend Development</h3>
+        <p>Proficient in HTML, CSS, JavaScript, and UI/UX principles.</p>
+      </div>
+
+      <div class="certificate-card" onclick="openCertificate('Goel.jpg')">
+        
+        <h3>CodeForBharat</h3>
+        <p>National-level Hackathon.</p>
+      </div>
+
+      <div class="certificate-card" onclick="openCertificate('certificate.jpeg')">
+        
+        <h3>HackWithIndia</h3>
+        <p>Attended a Event in Microsoft Office</p>
       </div>
 
     </div>
