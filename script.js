@@ -83,4 +83,10 @@ function openCertificate(src) {
 function closeCertificate() {
   document.getElementById("certificateModal").style.display = "none";
 }
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
 
