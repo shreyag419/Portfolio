@@ -104,6 +104,10 @@ nav {
   font-size: 2rem;
   cursor: pointer;
 }
+.nav-links.active {
+  display: flex;
+}
+
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
